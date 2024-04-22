@@ -478,3 +478,46 @@ $ git checkout main
 Switched to branch 'main'
 Your branch is behind 'origin/main' by 4 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
+
+
+BUNDLE 3(exercise1)
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/faq-page)
+$ git log 
+commit 3d16c8543b98639c441d468ce665dbfb2f387503 (HEAD -> ft/faq-page, origin/ft/faq-page)
+Author: Kamikazi-Deborah <deborahkamikazi9@gmail.com>
+Date:   Mon Apr 22 20:52:10 2024 +0200
+
+    the change on faq
+
+commit 7165d4eb458ea7d0d595739cb0f326f74b7437ed (origin/ft/contact-page, ft/contact-page)
+Author: Kamikazi-Deborah <deborahkamikazi9@gmail.com>
+Date:   Mon Apr 22 20:42:33 2024 +0200
+
+    the change on contact page
+
+commit 37aa241624ff24a451530ac3b0018c809626e914
+Author: Kamikazi-Deborah <deborahkamikazi9@gmail.com>
+Date:   Mon Apr 22 20:15:33 2024 +0200
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/faq-page)
+$ git add .
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/faq-page)
+$ git commit -m 'another change'
+[ft/faq-page fd4c437] another change
+ 2 files changed, 1 insertion(+), 194 deletions(-)
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/faq-page)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 385 bytes | 192.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Kamikazi-Deborah/Gym-Git-Exercise-Solutions.git
+   3d16c85..fd4c437  ft/faq-page -> ft/faq-page
+ 
+
+ BUNDLE3 (exercise2);

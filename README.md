@@ -480,6 +480,7 @@ Your branch is behind 'origin/main' by 4 commits, and can be fast-forwarded.
   (use "git pull" to update your local branch)
 
 
+<<<<<<< HEAD
 BUNDLE 3(exercise1)
 The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/faq-page)
 $ git log 
@@ -521,3 +522,195 @@ To https://github.com/Kamikazi-Deborah/Gym-Git-Exercise-Solutions.git
  
 
  BUNDLE3 (exercise2);
+=======
+BUNDELE 2 (exercise2)
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/bundle-2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 4 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (main)
+$ git pull
+Updating 3b6a915..4214149
+Fast-forward
+ README.md     | 91 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ about.html    | 19 +++++++++++++
+ home.html     | 14 +++++++++
+ index.html    |  1 +
+ services.html | 11 ++++++++
+ team.html     | 11 ++++++++
+ 6 files changed, 147 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 services.html
+ create mode 100644 team.html
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (main)
+$ git branch
+  dev
+  ft/bundle-2
+* main
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (main)
+$ git branch ft/service-redesign
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (main)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/service-redesign)
+$ git add .
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/service-redesign)
+$ git commit -m 'change on services'
+[ft/service-redesign e1234c9] change on services
+ 1 file changed, 4 insertions(+)
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/service-redesign)
+$ git push
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/service-redesign)
+$ git push --set-upstream origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 585 bytes | 292.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/Kamikazi-Deborah/Gym-Git-Exercise-Solutions/pull/new/ft/service-redesign
+remote:
+To https://github.com/Kamikazi-Deborah/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/service-redesign)
+$ git checkout main
+M       README.md
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (main)
+$ git add .
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (main)
+$ git commit -m 'changes on main'
+[main d070a00] changes on main
+ 2 files changed, 394 insertions(+), 1 deletion(-)
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (main)
+$ git push
+To https://github.com/Kamikazi-Deborah/Gym-Git-Exercise-Solutions.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Kamikazi-Deborah/Gym-Git-Exercise-Solutions.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (main)
+$ git push -u origin main
+To https://github.com/Kamikazi-Deborah/Gym-Git-Exercise-Solutions.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Kamikazi-Deborah/Gym-Git-Exercise-Solutions.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (main)
+$ git pull
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (main|MERGING)
+$ git push
+To https://github.com/Kamikazi-Deborah/Gym-Git-Exercise-Solutions.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Kamikazi-Deborah/Gym-Git-Exercise-Solutions.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (main|MERGING)
+$ git add .
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (main|MERGING)
+$ git commit -m 'another change'
+[main 77ce5fe] another change
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (main)
+$ git push
+Enumerating objects: 11, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 3.21 KiB | 1.60 MiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/Kamikazi-Deborah/Gym-Git-Exercise-Solutions.git
+   810546c..77ce5fe  main -> main
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (main)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/service-redesign)
+$ git diff ft/service-redesign main
+diff --git a/README.md b/README.md
+index ec00dec..560e68e 100644
+--- a/README.md
++++ b/README.md
+@@ -88,4 +88,393 @@ Switched to branch 'dev'
+
+ The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (dev)
+ $ git branch -d test
+-Deleted branch test (was 3b6a915).
+\ No newline at end of file
++Deleted branch test (was 3b6a915).
++
++BUNDLE2 (exercise1)
++The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (master)
++$ git branch -m master main
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/service-redesign)
+$ git merge main
+Updating e1234c9..77ce5fe
+Fast-forward
+ README.md     | 391 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ services.html |   8 +-
+ 2 files changed, 394 insertions(+), 5 deletions(-)
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/service-redesign)
+$ git add .
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/service-redesign)
+$ git commit -m 'another change'
+On branch ft/service-redesign
+Your branch is ahead of 'origin/ft/service-redesign' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+The Gym@DESKTOP-3NHLQBK MINGW64 ~/myproject/GitPrijects (ft/service-redesign)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Kamikazi-Deborah/Gym-Git-Exercise-Solutions.git
+   e1234c9..77ce5fe  ft/service-redesign -> ft/service-redesign
+>>>>>>> 1508e05e09dd0fb2c55bf2e28cd9efa5814b38ea
